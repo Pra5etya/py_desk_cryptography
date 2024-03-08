@@ -1,0 +1,20 @@
+Cara menggunakan Cryptography (Hashed and Chipper)
+=====================================================
+1. Pastikan string / integer dalam bentuk bytes ketika dilakukan enkripsi (hashing dan chipper)
+    -> (b'') atau val.encode()
+
+2. Pilih metode Cryptography
+    -> Hashing
+    -> Chipper (Simetris atau Asimetris)
+
+3. Jika ingin melakukan Autentikasi pada chipper, data yang ada pada database di dekrip terlebih, 
+    kemudian data yang telah di dekrip di cocokan dengan yang ada pada input data
+
+4. Jika ingin menyimpan kunci secara explisit pastikan ekstensi filenya seperti berikut:
+    -> .key (standard)
+    -> .pem (Privacy-Enhanced Mail) (Recomended) : menyimpan public atau private key berbentuk text yang terenkripsi menggunakan algoritma
+    -> .pfx (Personal Information Exchange) : menyimpan private key beserta sertifikat digital, sering digunakan pada keamanan jaringan (SSL / TLS)
+    -> .jks (Java KeyStore) : digunakan dalam lingkup java, file ini juga dilindungin dengan kata sandi yang telah terenkripsi
+    -> .ac (ASCII Armor) : sering digunakan dalam konteks PGP (Pretty Good Privacy) atau 
+        GPG (Gnu Privacy Guard) untuk berbagi kunci publik atau pribadi
+

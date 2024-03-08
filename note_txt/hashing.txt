@@ -1,0 +1,19 @@
+KASUS ENKRIPSI SATU ARAH:
+1. Enkripsi Password
+2. Enkripsi Nomor Kartu Kredit
+3. Enkripsi Informasi Identitas Pribadi
+4. Enkripsi Data Medis
+5. Enkripsi Kunci Rahasia
+6. Enkripsi Data Konfigurasi
+7. Enkripsi Token Akses
+8. Enkripsi Data Keuangan
+9. Enkripsi Kunci API
+
+REKOMENDASI ENKRIPSI SATU ARAH (2024): 
+1. bcrypt (Standard)
+2. Argon2 (New)
+3. Scrypt (Old)
+
+HASHING NOTE:
+o) penggunaan HASHING tidak dapat dibalikan hanya bisa di cocokan dan ditampilkan saja, 
+    misal ingin melakukan update, mencari data, atau melakukan download maka akan muncul error.

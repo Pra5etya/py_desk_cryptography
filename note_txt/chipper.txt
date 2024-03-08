@@ -1,0 +1,37 @@
+KASUS ENKRIPSI DUA ARAH
+1. ENKRIPSI KONEKSI CLIENT DAN SERVER 
+2. ENKRIPSI KONEKSI DATABASE 
+3. ENKRIPSI SECRET KEY (PROTOKOL DIFFIE-HELLMAN ?) 
+4. ENKRIPSI PEER TO PEER 
+5. ENKRIPSI SISTEM PERBANKAN DAN KEUANGAN 
+6. ENKRIPSI KOMUNIKASI AMAN (PESAN INSTAN ATAU EMAIL) 
+7. ENKRIPSI APLIKASI PERUSAHAAN (INFORMASI KANTOR) 
+8. ENKRIPSI SISTEM KESEHATAN ELEKTRONIK 
+9. ENKRIPSI APLIKASI CLOUD 
+10. ENKRIPSI PERANGKAT IOT 
+11. ENKRIPSI PERMAINAN ONLINE 
+12. ENKRIPSI SISTEM VOTING ELEKTRONIK 
+13. ENKRIPSI APLIKASI TELEMEDIS
+
+ENKRIPSI SIMETRIS
+1. AES (Advanced Encryption Standard) -> umum digunakan (AES: 128, 192, 256) [RECOMEND]
+2. DES (Data Encryption Standard) -> seperti AES namun memiliki kunci yang pendek (56)
+3. 3DES (Triple DES) -> seperti DES namun dilakukan enkripsi sebanyak 3x
+4. Twofish -> Algoritma simetris seperti AES
+5. ChaCha20-Poly1305 -> kontruksi kriptografi ringan dan efisien, sering digunakan dalam protokol seperti TLS
+
+ENKRIPSI ASIMETRIS
+1. RSA (Rivest-Shamir-Adleman) -> untuk enkripsi tanda tangan digital, dan pertukaran kunci [UMUM]
+2. DSA (Digital Signature Algorithm) -> menggunakan grup bilangan ber-orde tinggi, biasa digunakan untuk tanda tangan digital dan dokumen
+3. ECC (Eliptic Curve Cryptography) -> menggunakan kurva eliptik untuk enkripsi dan tanda tangan digital, 
+                                        ukuran kunci lebih kecil dar RSA dan tingkat keamanan setara
+4. ElGamal -> enkripsi dan pertukaran kunci, lebih sering digunakan dalam kriptografi hibrida
+5. DH (Diffie-Hellman) -> bagian protokol enkripsi asimetris seperti TLS dan SSH untuk menegosiasi kunci simetris
+
+REKOMENDASI ENKRIPSI DUA ARAH (2024): 
+o) Symetris
+    1. AES
+
+o) asimetris 
+    1. RSA 
+    2. ECC
