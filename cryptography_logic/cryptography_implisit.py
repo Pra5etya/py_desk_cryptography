@@ -13,13 +13,20 @@ fernet_cipher = Fernet(fernet_key)
 
 # Encrypt data using Fernet
 data = b"Sensitive information"
+data2 = b"Sensitive information"
+
 encrypted_data = fernet_cipher.encrypt(data)
+encrypted_data2 = fernet_cipher.encrypt(data2)
+
 print("\nEncrypted data:", encrypted_data)
+print("Encrypted data:", encrypted_data2)
 
 # Decrypt data using Fernet
 decrypted_data = fernet_cipher.decrypt(encrypted_data)
-print("Decrypted data:", decrypted_data.decode())
+decrypted_data2 = fernet_cipher.decrypt(encrypted_data2)
 
+print("\nDecrypted data:", decrypted_data.decode())
+print("Decrypted data:", decrypted_data2.decode())
 
 # RSA Encryption/Decryption (Asimetris)
 # =====================

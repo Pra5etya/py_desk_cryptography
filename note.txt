@@ -7,10 +7,13 @@ Cara menggunakan Cryptography (Hashed and Chipper)
     -> Hashing
     -> Chipper (Simetris atau Asimetris)
 
-3. Jika ingin melakukan Autentikasi pada chipper, data yang ada pada database di dekrip terlebih, 
+3. Pastikan jika melakukan chipper generate key dilakukan hanya sekali saja, 
+    yakni ketika key di buat maka tidak usah meng-generate key lagi
+
+4. Jika ingin melakukan Autentikasi pada chipper, data yang ada pada database di dekrip terlebih, 
     kemudian data yang telah di dekrip di cocokan dengan yang ada pada input data
 
-4. Jika ingin menyimpan kunci secara explisit pastikan ekstensi filenya seperti berikut:
+5. Jika ingin menyimpan kunci secara explisit pastikan ekstensi filenya seperti berikut:
     -> .key (standard)
     -> .pem (Privacy-Enhanced Mail) (Recomended) : menyimpan public atau private key berbentuk text yang terenkripsi menggunakan algoritma
     -> .pfx (Personal Information Exchange) : menyimpan private key beserta sertifikat digital, sering digunakan pada keamanan jaringan (SSL / TLS)
@@ -18,3 +21,8 @@ Cara menggunakan Cryptography (Hashed and Chipper)
     -> .ac (ASCII Armor) : sering digunakan dalam konteks PGP (Pretty Good Privacy) atau 
         GPG (Gnu Privacy Guard) untuk berbagi kunci publik atau pribadi
 
+6. Lakukan Analisa keamanan dan gaya tulisan untuk analisa hasil kode dengan:
+    -> bandit (pip install bandit; bandit nama_file): berfokus pada indetifikasi kerentanan keamanan, 
+        dapat diintegrasikan dengan alur kerja Continuous Integration/Continuous Deployment (CI/CD)
+    -> pylint (pip install pylint; pylint nama_file): berfokus menganilsa gaya kode secara mendalam, 
+        dapat memberikan laporan dan hasil penilaian kode

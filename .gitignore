@@ -1,1 +1,5 @@
 my_env/
+fernet_key.pem
+hashed_password.pem
+private_key.pem
+public_key.pem

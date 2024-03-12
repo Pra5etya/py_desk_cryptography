@@ -35,3 +35,6 @@ o) Symetris
 o) asimetris 
     1. RSA 
     2. ECC
+
+HASHING NOTE:
+o) penggunaan CHIPPER tidak bisa dilakukan untuk autentikasi dimana WHERE harus dalam kondisi (plaintext)

@@ -15,5 +15,5 @@ REKOMENDASI ENKRIPSI SATU ARAH (2024):
 3. Scrypt (Old)
 
 HASHING NOTE:
-o) penggunaan HASHING tidak dapat dibalikan hanya bisa di cocokan dan ditampilkan saja, 
-    misal ingin melakukan update, mencari data, atau melakukan download maka akan muncul error.
+o) penggunaan HASHING tidak dapat dibalikan hanya bisa di cocokan saja, 
+    misal update, search, atau download maka akan muncul error.
